@@ -1,17 +1,10 @@
-#include<stdio.h>
-/**
- * main - prints all arguments without using ac
- * @ac: number of arguments in av
- * @av: array of strings (arguments)
-*/
+#include <stdio.h>
 
-int main(int ac, char **av)
+int main(int argc, char *argv[])
 {
-    int i;
-    for(i = 0; i < ac; i++)
-    {
-        (void) ac;
-        printf("%s\n", av[i]);
-    }
-    return (0);
+	int counter;
+	for(counter=0; counter<argc; counter++)
+		printf("argv[%2d]: %s\n",counter,argv[counter]);
+	
+	return 0;
 }
