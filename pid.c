@@ -12,7 +12,7 @@
 
 int main(int ac, char **av) {
     pid_t parent_pid = getppid();
-    printf("Parent PID: %d\n", parent_pid);#
+    printf("Parent PID: %d\n", parent_pid);
     
     return 0;
 }
